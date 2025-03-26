@@ -1,0 +1,69 @@
+.profile-card {
+    max-width: 20rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1 );
+    background-color: white;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-content {
+    padding: 1.5rem;
+  }
+  
+  .profile-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Description */
+  .profile-description {
+    color: #718096; /* Tailwind's text-gray-600 */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Social Links */
+  .profile-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Social Icons */
+  .icon {
+    color: #718096; /* Tailwind's text-gray-600 */
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #3182ce; /* Default blue */
+  }
+  
+  .icon.twitter:hover {
+    color: #1DA1F2; /* Twitter Blue */
+  }
+  
+  .icon.linkedin:hover {
+    color: #0077b5; /* LinkedIn Blue */
+  }
+  
+  .icon.mail:hover {
+    color: #e53e3e; /* Red */
+  }
+  
