@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-      <p>© 2024 Lab Instruments. All Rights Reserved.</p>
+      <p>© 2024 Kratoos corporation. All Rights Reserved.</p>
       <ul>
         <li>Terms of Service</li>
         <li>Privacy Policy</li>

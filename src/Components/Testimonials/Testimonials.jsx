@@ -39,7 +39,7 @@ const slideBackward = ()=>{
                     <span>TechPrecision Ltd, Berlin</span>
                   </div>
                 </div>
-                <p>&quot;Working with Lab Instrumentss has been a game-changer for our operations. Their mechanical instruments are unmatched in quality, and their attention to our specific needs made the entire purchasing process effortless. </p>
+                <p>&quot;Working with Kratoos corporation has been a game-changer for our operations. Their mechanical instruments are unmatched in quality, and their attention to our specific needs made the entire purchasing process effortless. </p>
               </div>
             </li>
             <li>
@@ -51,7 +51,7 @@ const slideBackward = ()=>{
                     <span>TechPrecision Ltd, Berlin</span>
                   </div>
                 </div>
-                <p>&quot;Working with Lab Instrumentss has been a game-changer for our operations. Their mechanical instruments are unmatched in quality, and their attention to our specific needs made the entire purchasing process effortless. </p>
+                <p>&quot;Working with Kratoos corporation has been a game-changer for our operations. Their mechanical instruments are unmatched in quality, and their attention to our specific needs made the entire purchasing process effortless. </p>
               </div>
             </li>
             <li>
@@ -63,7 +63,7 @@ const slideBackward = ()=>{
                     <span>TechPrecision Ltd, Berlin</span>
                   </div>
                 </div>
-                <p>&quot;Working with Lab Instrumentss has been a game-changer for our operations. Their mechanical instruments are unmatched in quality, and their attention to our specific needs made the entire purchasing process effortless. </p>
+                <p>&quot;Working with Kratoos corporation has been a game-changer for our operations. Their mechanical instruments are unmatched in quality, and their attention to our specific needs made the entire purchasing process effortless. </p>
               </div>
             </li>
             <li>
@@ -75,7 +75,7 @@ const slideBackward = ()=>{
                     <span>TechPrecision Ltd, Berlin</span>
                   </div>
                 </div>
-                <p>&quot;Working with Lab Instrumentss has been a game-changer for our operations. Their mechanical instruments are unmatched in quality, and their attention to our specific needs made the entire purchasing process effortless. </p>
+                <p>&quot;Working with Kratoos corporation has been a game-changer for our operations. Their mechanical instruments are unmatched in quality, and their attention to our specific needs made the entire purchasing process effortless. </p>
               </div>
             </li>
           </ul>

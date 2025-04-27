@@ -8,9 +8,9 @@ const Customers = () => {
     <div className='customers container'>
       <div className='customers-box'>
         <div className="customers-left">
-        <h3>Customers Lab Instrumentss</h3>
+        <h3>Customers Kratoos corporation</h3>
           <h2>Your Trusted Partner in Precision Engineering</h2>
-          <p>At Lab Instrumentss, we are honored to serve a diverse group of esteemed customers who trust us for their mechanical instrument needs. This page showcases some of the valued clients we have had the privilege of partnering with across various industries. We take pride in contributing to their success and look forward to continuing our journey together.</p>
+          <p>At Kratoos corporations, we are honored to serve a diverse group of esteemed customers who trust us for their mechanical instrument needs. This page showcases some of the valued clients we have had the privilege of partnering with across various industries. We take pride in contributing to their success and look forward to continuing our journey together.</p>
         </div>
 
         <div className="customers-right">
