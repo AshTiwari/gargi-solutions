@@ -1,5 +1,5 @@
 import './Team.css';
-import founderPhoto from '../../assets/priyanka3.jpg';
+import founderPhoto from '../../assets/priyanka.jpg';
 import ashutoshPhoto from '../../assets/ashutosh.jpeg';
 import pricePhoto from '../../assets/prince.jpeg';
 
@@ -28,14 +28,14 @@ const MeetTheTeam = () => {
       image: ashutoshPhoto,
       skills: ["Backend Development", "Python", "GO", "C++", "Quantitative Analysis"]
     },
-    {
-      id: 3,
-      name: "Devesh. D",
-      title: "Admin & VA",
-      bio: "The Admin Assistant at Kratoos, ensures seamless administrative operations with precision and dedication.",
-      image: ashutoshPhoto,
-      skills: ["Administration", "Virtual Assistance", "Organization", "Scheduling"]
-    },
+    // {
+    //   id: 3,
+    //   name: "Devesh. D",
+    //   title: "Admin & VA",
+    //   bio: "The Admin Assistant at Kratoos, ensures seamless administrative operations with precision and dedication.",
+    //   image: ashutoshPhoto,
+    //   skills: ["Administration", "Virtual Assistance", "Organization", "Scheduling"]
+    // },
   ];
 
   return (
