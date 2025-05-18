@@ -16,13 +16,13 @@ const Contact = () => {
           <p>Get in touch with Kratoos corporations today to discuss how we can meet your instrument needs. We&apos;re here to provide expert guidance and support every step of the way.</p>
         <ul>
           <li> <img src={mail_icon} alt=''/>
-              labinstrumentss@gmail.com
+              contact@kratoos.com
           </li>
           <li> <img src={phone_icon} alt=''/>
               +91-9324753331
           </li>
           <li> <img src={location_icon} alt=''/>
-              Kratoos corporation, C/17, Puneet Darshan, Nandivali Road, Shivaji Udyog Nagar, Dombivli East, Thane 421264
+              Kratoos corporation, Office 16, Samrat Estates, J.N. Road, Mulund West, Mumbai 400080
           </li>
         </ul>
         {/* </div> */}
