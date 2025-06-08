@@ -104,30 +104,32 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px 40px;
+    padding: 0 70px 40px;
     box-sizing: border-box;
 }
 
 .carousel-viewport {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px 0;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 10px;
+    margin: 0 auto;
     transition: all 0.3s ease-in-out;
     position: relative;
+    max-width: 1020px;
 }
 
 .carousel-viewport.transitioning {
     opacity: 0.9;
 }
 
-.carousel-item {
-    flex: 1;
-    min-width: 0;
-    max-width: 400px;
+/* Comment out carousel-item class since we're not using it */
+/* .carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
     opacity: 1;
     transition: all 0.3s ease-in-out;
-}
+} */
 
 /* Product Card */
 .product-card {
@@ -139,7 +141,8 @@
     height: 400px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .product-card:hover {
@@ -198,11 +201,11 @@
 }
 
 .carousel-button.prev {
-    left: 10px;
+    left: -20px;
 }
 
 .carousel-button.next {
-    right: 10px;
+    right: -20px;
 }
 
 /* Disabled button style */
@@ -246,7 +249,7 @@
 }
 
 .carousel-dot.active {
-    background: #1a237e;
+    background-color: #1a237e;
     transform: scale(1.2);
 }
 
@@ -299,11 +302,16 @@
 @media (max-width: 992px) {
     .carousel-container {
         max-width: 800px;
-        padding: 0 40px 40px;
+        padding: 0 60px 40px;
     }
 
     .carousel-viewport {
-        gap: 20px;
+        gap: 15px;
+        max-width: 680px;
+    }
+    
+    .product-card {
+        width: 300px;
     }
 
     .product-card {
@@ -323,6 +331,14 @@
         height: 36px;
         font-size: 18px;
     }
+    
+    .carousel-button.prev {
+        left: -10px;
+    }
+    
+    .carousel-button.next {
+        right: -10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -331,11 +347,17 @@
     }
 
     .carousel-container {
-        padding: 0 30px 40px;
+        padding: 0 40px 40px;
     }
     
     .carousel-viewport {
+        max-width: 320px;
         gap: 0;
+        justify-content: center;
+    }
+    
+    .product-card {
+        width: 300px;
     }
     
     .carousel-button {
@@ -345,11 +367,11 @@
     }
     
     .carousel-button.prev {
-        left: 5px;
+        left: 10px;
     }
     
     .carousel-button.next {
-        right: 5px;
+        right: 10px;
     }
     
     .product-card {
@@ -377,6 +399,14 @@
 
     .carousel-container {
         padding: 0 20px 40px;
+    }
+    
+    .carousel-viewport {
+        max-width: 280px;
+    }
+    
+    .product-card {
+        width: 280px;
     }
     
     .product-card {

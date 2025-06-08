@@ -4,11 +4,12 @@ import makhanaArticle from '../../assets/article1.jpg'
 import npa from '../../assets/article2.png'
 import zerodha from '../../assets/article3.png'
 import netflix from '../../assets/article4.jpg'
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Principles = () => {
   const principlesRef = useRef(null);
   const articlesRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,7 +20,7 @@ const Principles = () => {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: isMobile ? 0.05 : 0.1, rootMargin: '0px 0px -50px 0px' }
     );
 
     const principlesEl = principlesRef.current;
@@ -28,11 +29,18 @@ const Principles = () => {
     if (principlesEl) observer.observe(principlesEl);
     if (articlesEl) observer.observe(articlesEl);
 
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
     return () => {
       if (principlesEl) observer.unobserve(principlesEl);
       if (articlesEl) observer.unobserve(articlesEl);
+      window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isMobile]);
 
   const principles = {
     title: "Our Guiding Principles",
@@ -90,8 +98,12 @@ const Principles = () => {
           </div>
 
           <div className="principles-grid">
-            {principles.mainPrinciples.map((principle) => (
-              <div key={principle.id} className="principle-card">
+            {principles.mainPrinciples.map((principle, index) => (
+              <div 
+                key={principle.id} 
+                className="principle-card"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <div className="principle-icon-container">
                   {principle.icon}
                 </div>
@@ -112,8 +124,15 @@ const Principles = () => {
           </div>
 
           <div className="articles-grid">
-            {articles.map((article) => (
-              <a key={article.id} href={article.href} className="article-card" target="_blank" rel="noopener noreferrer">
+            {articles.map((article, index) => (
+              <a 
+                key={article.id} 
+                href={article.href} 
+                className="article-card" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <div className="article-image-container">
                   <img src={article.image} alt={article.title} className="article-image" />
                   <div className="article-overlay"></div>

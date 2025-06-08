@@ -3,6 +3,7 @@
   background: radial-gradient(circle at top left, #f0f4f8, #d9e2ec);
   min-height: 100vh;
   padding: 5rem;
+  box-sizing: border-box;
 }
 
 /* Principles Section */
@@ -27,6 +28,9 @@
   font-size: 1.25rem;
   color: #4a5568;
   margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .principles-grid {
@@ -42,11 +46,17 @@
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .principle-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.principle-icon-container {
+  margin-bottom: 1rem;
+  color: #3182ce;
 }
 
 .principle-title {
@@ -57,8 +67,9 @@
 }
 
 .principle-description {
-  font-size: 0.825rem;
+  font-size: 0.9rem;
   color: #4a5568;
+  line-height: 1.6;
 }
 
 /* Responsive Principle Card Width */
@@ -79,10 +90,18 @@
 }
 
 .articles-title {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #1a202c;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.title-underline {
+  height: 3px;
+  width: 60px;
+  background-color: #3182ce;
+  margin: 0 auto 2.5rem auto;
 }
 
 .articles-grid {
@@ -102,12 +121,13 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 .article-card {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -117,16 +137,36 @@
 
 .article-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.article-image-container {
+  position: relative;
+  overflow: hidden;
 }
 
 .article-image {
   width: 100%;
   height: 12rem;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover .article-image {
+  transform: scale(1.05);
+}
+
+.article-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 50%);
 }
 
 .article-content {
-  padding: 0.825rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -139,16 +179,18 @@
 }
 
 .article-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #2d3748;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
 }
 
 .article-description {
-  font-size: 0.825rem;
+  font-size: 0.875rem;
   color: #4a5568;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
 }
 
 .read-more {
@@ -157,8 +199,125 @@
   color: #3182ce;
   margin-top: auto;
   font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .read-more svg {
   margin-left: 0.25rem;
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover .read-more {
+  color: #2c5282;
+}
+
+.article-card:hover .read-more svg {
+  transform: translateX(3px);
+}
+
+/* Animations */
+.principles-section.animate-in .principle-card,
+.articles-section.animate-in .article-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .principles-page {
+    padding: 3rem 1.5rem;
+  }
+  
+  .principles-section,
+  .articles-section {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .principles-title {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .principles-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .articles-title {
+    font-size: 1.75rem;
+  }
+  
+  .principle-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .principles-page {
+    padding: 2rem 1rem;
+  }
+  
+  .principles-section,
+  .articles-section {
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .principles-title {
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+  }
+  
+  .principles-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .principle-card {
+    padding: 1rem;
+  }
+  
+  .principle-title {
+    font-size: 1.1rem;
+  }
+  
+  .principle-description {
+    font-size: 0.85rem;
+  }
+  
+  .articles-title {
+    font-size: 1.5rem;
+  }
+  
+  .article-image {
+    height: 10rem;
+  }
+  
+  .article-content {
+    padding: 1rem;
+  }
+  
+  .article-title {
+    font-size: 1rem;
+  }
+  
+  .article-description {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more {
+    font-size: 0.8rem;
+  }
 }

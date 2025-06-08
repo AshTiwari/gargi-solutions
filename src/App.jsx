@@ -100,12 +100,12 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener('wheel', handleScroll, { passive: false });
-    return () => {
-      window.removeEventListener('wheel', handleScroll);
-    };
-  }, [currentSection]);
+  // useEffect(() => {
+  //   window.addEventListener('wheel', handleScroll, { passive: false });
+  //   return () => {
+  //     window.removeEventListener('wheel', handleScroll);
+  //   };
+  // }, [currentSection]);
 
   return (
     <div>

@@ -68,7 +68,28 @@
 }
 .principals p{
     color: #676767;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.principals-button {
+    margin-top: 20px;
+}
+
+.principals-button .btn {
+    background-color: #212EA0;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.principals-button .btn:hover {
+    background-color: #000F38;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* --------- Media Query -------------- */

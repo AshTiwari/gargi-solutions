@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import './Products.css';
 import contentCreation from '../../assets/contentCreation.jpeg';
 import websolution from '../../assets/web.jpeg'
 import fintech from '../../assets/fintech.jpeg'
 import resumeReview from '../../assets/resume.jpeg'
 import consumables1 from '../../assets/consumables1.png';
 import consumables2 from '../../assets/consumables2.png';
-import ProductModal from './ProductModal';
+import ProductModal from './ProductModal.jsx';
+import './Products.css';
 
 const Products = () => {
   const [activeProduct, setActiveProduct] = useState(null);
@@ -144,7 +144,7 @@ const Products = () => {
       const index = (currentIndex + i) % products.length;
       visibleProducts.push(products[index]);
     }
-    
+    console.log(visibleProducts);
     return visibleProducts;
   };
 
@@ -256,8 +256,7 @@ const Products = () => {
         <div className={`carousel-viewport ${isTransitioning ? 'transitioning' : ''}`}>
           {getVisibleProducts().map((product, index) => (
             <div 
-              key={`visible-${product.id}-${index}`} 
-              className="carousel-item"
+              key={`visible-${product.id}-${index}`}
             >
               <div className="product-card">
                 <img src={product.image} alt={product.name} />
