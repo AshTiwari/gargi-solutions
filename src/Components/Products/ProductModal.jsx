@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Modal } from 'antd';
 import { CheckCircle, X } from 'lucide-react';
+import { HashLink } from 'react-router-hash-link';
 import './Products.css';
 
 const ProductModal = ({ 
@@ -30,13 +31,17 @@ const ProductModal = ({
         closeIcon={<X size={24} />}
         closable={true}
         footer={[
-          <button 
-            key="contact" 
-            onClick={handleOk}
-            className="footer-btn get-started-btn"
-          >
-            Contact Us
-          </button>
+          <div key="contact" style={{ display: 'flex', justifyContent: 'center' }}>
+            <HashLink
+              to="/#contact"
+              smooth
+              className="footer-btn get-started-btn"
+              style={{ width: 'auto', minWidth: '120px', padding: '8px 24px', textAlign: 'center' }}
+              onClick={handleOk}
+            >
+              Contact Us
+            </HashLink>
+          </div>
         ]}
       >
         <div className="modal-content">

@@ -13,13 +13,13 @@ const Contact = () => {
       <div className='contact-box'>
         {/* <div className="contact-col"> */}
           <h3>Send Us a Message! <img src={msg_icon} alt="" /> </h3>
-          <p>Get in touch with Kratoos corporations today to discuss how we can meet your instrument needs. We&apos;re here to provide expert guidance and support every step of the way.</p>
+          <p>Get in touch with Kratoos corporations today to discuss how we can meet your needs. We&apos;re here to provide expert guidance and support every step of the way.</p>
         <ul>
           <li> <img src={mail_icon} alt=''/>
               contact@kratoos.com
           </li>
           <li> <img src={phone_icon} alt=''/>
-              +91-9324753331
+              +91-8928412489 | +91-8691852076
           </li>
           <li> <img src={location_icon} alt=''/>
               Kratoos corporation, Office 16, Samrat Estates, J.N. Road, Mulund West, Mumbai 400080

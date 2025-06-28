@@ -18,7 +18,7 @@ const Principals = () => {
 
         <div className="principals-right">
           <h3>Kratoos Corporation</h3>
-          <h2>Your Trusted Partner in Innovation</h2>
+          <h2>Our Value System</h2>
           <p>Our core principles drive us: we value integrity, always strive for excellence, celebrate bold ideas, create opportunities, and make innovation a way of life. </p>
           <div className="principals-button">
             <button className='btn' onClick={() => navigate("/ourPrinciples")}>Our Esteemed Principals</button>

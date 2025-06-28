@@ -19,9 +19,8 @@ const About = () => {
 
           <div className="about-right">
             <h3>About Kratoos Corporation</h3>
-            <h2>Your Digital Growth Partner </h2>
-            <p>In today’s digital-first world, content is more than just information—it’s the lifeblood of engagement, shaping how audiences connect, learn, and trust. From articles and blogs to videos and social media posts, content is the primary medium through which audiences, make decisions. Through strategic storytelling, audience-centric messaging, and high-quality content tailored to your unique voice, we ensure your brand stands out amidst the noise.
-            But we don’t stop at just creating impactful content. In the ever-evolving world of technology, Kratoos offers innovative tech solutions designed to amplify your reach and streamline your operation.</p>
+            <h2>Dreamers, Doers, Disruptors - That's Us! </h2>
+            <p>Behind Kratoos Corp is a team that dares, dreams, and delivers. From creators and coders to strategists and number-crunchers — we’re the engine behind the edge. Each mind here brings a unique spark, united by the vision to disrupt and elevate. We’re not just building brands — we’re shaping the infinite.</p>
             <div className="about-button">
               <button className='btn' onClick={handleButtonClick}>Meet The Team</button>
             </div>

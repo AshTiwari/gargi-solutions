@@ -25,14 +25,12 @@ const Products = () => {
       modalContent: {
         title: "Elevate Your Brand with Compelling Content",
         description:
-        "Kratoos has made a remarkable impact on job seekers by refining and enhancing professional resumes. Our meticulous attention to detail and expert craftsmanship ensure a standout resume that accelerates career success.",   
+        "Kratoos empowers businesses to rise above the noise with strategic, high-quality content that builds authority. From compelling blogs to dynamic visuals, our content is the tool that sets your brand apart.",   
         services: [
           "Content Strategy Development",
           "Copywriting & Blogging",
           "Social Media Content",
           "Visual & Multimedia Content",
-          "SEO-Optimized Content",
-          "Brand Voice Consistency"
         ],
         image: contentCreation
       }
@@ -69,7 +67,6 @@ const Products = () => {
         services: [
           "Custom Website Design",
           "Responsive Development",
-          "SEO & Performance Optimization",
           "E-commerce Solutions",
           "Content Management Integration",
           "Ongoing Maintenance & Support"
@@ -83,40 +80,38 @@ const Products = () => {
       image: fintech,
       description: "Innovative financial technology solutions for modern businesses.",
       modalContent: {
-        title: "Empowering Finance with Fin Tech Solutions",
+        title: "Empowering Finance Through FinTech Innovation",
         description:
-          "Kratoos simplifies the fintech landscape for businesses with cutting-edge software solutions and strategic content. From seamless financial integrations to compelling industry-focused content, we empower brands to navigate fintech complexities with confidence and efficiency.",
+          "At Kratoos, we streamline the fintech journey for businesses by delivering powerful software solutions and strategic insights. We help firms navigate the evolving financial landscape with clarity and confidence.",
         services: [
-          "Digital Payment Solutions",
+          "Prop Trading Platforms",
           "Blockchain Integration",
           "Financial Analytics",
-          "Security & Compliance",
-          "Mobile Banking Solutions",
-          "Automated Investment Tools"
+          "Trading Algorithms and Bots",
         ],
         image: fintech
       }
     },
-    {
-      id: 5,
-      name: "Accounting Services",
-      image: consumables2,
-      description: "Comprehensive accounting solutions for business success.",
-      modalContent: {
-        title: "Professional Accounting Services",
-        description:
-          "Kratoos provides comprehensive accounting solutions to help businesses maintain financial health and compliance. Our expert team ensures accurate bookkeeping, tax preparation, and financial planning services.",
-        services: [
-          "Bookkeeping & Financial Records",
-          "Tax Planning & Preparation",
-          "Financial Statement Preparation",
-          "Payroll Services",
-          "Business Advisory Services",
-          "Audit & Assurance"
-        ],
-        image: consumables2
-      }
-    },
+    // {
+    //   id: 5,
+    //   name: "Accounting Services",
+    //   image: consumables2,
+    //   description: "Comprehensive accounting solutions for business success.",
+    //   modalContent: {
+    //     title: "Professional Accounting Services",
+    //     description:
+    //       "Kratoos provides comprehensive accounting solutions to help businesses maintain financial health and compliance. Our expert team ensures accurate bookkeeping, tax preparation, and financial planning services.",
+    //     services: [
+    //       "Bookkeeping & Financial Records",
+    //       "Tax Planning & Preparation",
+    //       "Financial Statement Preparation",
+    //       "Payroll Services",
+    //       "Business Advisory Services",
+    //       "Audit & Assurance"
+    //     ],
+    //     image: consumables2
+    //   }
+    // },
   ];
 
   const openModal = (product) => {

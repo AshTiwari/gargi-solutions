@@ -42,7 +42,7 @@ const MeetTheTeam = () => {
     <div className="team-container">
       <div className="team-header">
         <h1 className="team-title">Our <span className="highlight">Team</span></h1>
-        <p className="team-subtitle">Meet the talented individuals behind Kratoos</p>
+        <p className="team-subtitle">Meet Kratoos Momentum Makers</p>
       </div>
 
       {/* Combined View: Founder Section */}

@@ -23,16 +23,12 @@ const Hero = () => {
     <div className='hero container'>
       <div className='hero-text'>
         <h1 className="heading">
-          Your Growth Partner For <p className="animated-text" style={{marginBottom:0}}>
+          Kratoos Corp <p className="animated-text" style={{marginBottom:0}}>
             <TypeAnimation
               sequence={[
-                'Content Creation',
+                'Create Bold',
                 1000,
-                'Professional Growth',
-                1000,
-                'Online Presence',
-                1000,
-                'Financial Growth',
+                'Grow Infinite',
                 1000,
               ]}
               wrapper="span"
@@ -41,7 +37,7 @@ const Hero = () => {
             />
           </p>
         </h1>
-        <p>Empowering your success through comprehensive digital solutions. We specialize in crafting engaging LinkedIn profiles, developing stunning websites, reviewing professional resumes, and providing expert web development services. Our fintech solutions revolutionize your financial operations, while our seasoned auditors and accountants ensure your business compliance and growth. </p>
+        <p>We’re not just a service provider—we’re your creative force and tech backbone. From powerful content that speaks volumes to sleek web solutions that scale, Our fintech finesse and razor-sharp resume reviews shape future-ready brands. We merge elegance with edge, strategy with soul, detail with disruption. Every word, every code, every solution—crafted to amplify your impact. For those who dare to go beyond limits, we’re already there. Kratoos isn’t a company. It’s a movement. Join the infinite.</p>
         <button className='btn' onClick={handleScroll}>Explore More <img src={dark_arrow} alt="" />
         </button>
       </div>
