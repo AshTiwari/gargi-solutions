@@ -12,6 +12,7 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Team from './Components/Team/Team';
 import Principles from './Components/Principles/Principles';
+import Blogs from './Components/Blogs/Blogs';
 import ScrollToTop from './Components/ScrollToTop';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
   const aboutRef = useRef(null);
   const productsRef = useRef(null);
   const principalsRef = useRef(null);
+  const blogsRef = useRef(null);
   // const customersRef = useRef(null);
   const testimonialsRef = useRef(null);
   const contactRef = useRef(null);
@@ -29,6 +31,7 @@ const Home = () => {
     { ref: aboutRef, id: 'about' },
     { ref: productsRef, id: 'products' },
     { ref: principalsRef, id: 'principals' },
+    { ref: blogsRef, id: 'blogs' },
     // { ref: customersRef, id: 'customers' },
     { ref: testimonialsRef, id: 'testimonials' },
     { ref: contactRef, id: 'contact' },
@@ -120,6 +123,9 @@ const Home = () => {
       </div>
       <div id="principles" ref={principalsRef} className="section">
         <Principals />
+      </div>
+      <div id="blogs" ref={blogsRef} className="section">
+        <Blogs />
       </div>
       {/* <div id="customers" ref={customersRef} className="section">
         <Customers />

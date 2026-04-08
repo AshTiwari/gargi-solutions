@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import contentCreation from '../../assets/contentCreation.jpeg';
 import websolution from '../../assets/web.jpeg'
-import fintech from '../../assets/fintech.jpeg'
 import resumeReview from '../../assets/resume.jpeg'
 import consumables1 from '../../assets/consumables1.png';
 import consumables2 from '../../assets/consumables2.png';
@@ -72,24 +71,6 @@ const Products = () => {
           "Ongoing Maintenance & Support"
         ],
         image: websolution
-      }
-    },
-    {
-      id: 4,
-      name: "Fin Tech Solutions",
-      image: fintech,
-      description: "Innovative financial technology solutions for modern businesses.",
-      modalContent: {
-        title: "Empowering Finance Through FinTech Innovation",
-        description:
-          "At Kratoos, we streamline the fintech journey for businesses by delivering powerful software solutions and strategic insights. We help firms navigate the evolving financial landscape with clarity and confidence.",
-        services: [
-          "Prop Trading Platforms",
-          "Blockchain Integration",
-          "Financial Analytics",
-          "Trading Algorithms and Bots",
-        ],
-        image: fintech
       }
     },
     // {

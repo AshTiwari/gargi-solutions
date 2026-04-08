@@ -15,18 +15,18 @@ const MeetTheTeam = () => {
     {
       id: 1,
       name: "Prince",
-      title: "Head of Accounts & Audit",
-      bio: "Leading the Accounts division at Kratoos, brings unmatched expertise in Accounts and Audit. His sharp acumen ensures precision and efficiency, elevating organizational excellence.",
+      title: "Accountant",
+      bio: "Manages the finances and books at Kratoos, keeping everything accurate and on track.",
       image: pricePhoto,
-      skills: ["Financial Planning", "Audit Management", "Risk Assessment", "Compliance"]
+      skills: ["Accounting", "Financial Management"]
     },
     {
       id: 2,
       name: "Ashutosh Kumar",
-      title: "Chief Tech Developer",
-      bio: "The Head of Tech Services at Kratoos, is a versatile Backend and Quant Developer specializing in GO, Python, and C++. With expertise in building platforms like 021.trade, he ensures top-tier code and website development solutions for clients.",
+      title: "Tech Lead",
+      bio: "Handles the technical side of Kratoos, building and maintaining our digital solutions.",
       image: ashutoshPhoto,
-      skills: ["Backend Development", "Python", "GO", "C++", "Quantitative Analysis"]
+      skills: ["Development", "Technical Operations"]
     },
     // {
     //   id: 3,
@@ -96,19 +96,6 @@ const MeetTheTeam = () => {
               <div className="team-card-back">
                 <h3 className="team-card-name">{member.name}</h3>
                 <p className="team-card-bio">{member.bio}</p>
-                <div className="team-card-skills">
-                  {member.skills.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
-                {/* <div className="team-card-social">
-                  <a href="#" className="social-icon" aria-label="LinkedIn">
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                  <a href="#" className="social-icon" aria-label="Twitter">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </div> */}
               </div>
             </div>
           ))}

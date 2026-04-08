@@ -55,6 +55,11 @@ const Navbar = () => {
           </HashLink>
         </li>
         <li>
+          <HashLink smooth to="/#blogs">
+            Blogs
+          </HashLink>
+        </li>
+        <li>
           <HashLink smooth to="/#testimonials">
             Testimonials
           </HashLink>
