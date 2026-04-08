@@ -18,7 +18,7 @@ const Testimonials = () => {
       position: "Operations Manager",
       company: "Tradedge Consistent Services, Thane",
       image: user1,
-      text: "We at Tradedge Consistent Services are extremely grateful for the outstanding support and expertise that the team from Kratoos Corp has brought to our team. His deep knowledge and skill in the quantitative finance industry have made a significant impact on our projects."
+      text: "We at Tradedge Consistent Services are extremely grateful for the outstanding support and expertise that the team from Kratoos Corp has brought to our team. Her deep knowledge and skill in content creation have made a significant impact on our website. From copy to visuals, Kratoos delivered end-to-end content that truly elevated our website."
     },
     {
       id: 2,
