@@ -39,7 +39,7 @@ Routes: `/`, `/team`, `/principles` (old `/ourPrinciples` links still work), any
 `index.html` for unknown paths (otherwise a direct visit to `/team` returns the host's own 404):
 
 - **Netlify:** add `public/_redirects` containing `/*  /index.html  200`
-- **Vercel:** works out of the box for Vite
+- **Vercel (current host):** handled by `vercel.json` in this repo
 - **Apache / cPanel:** `.htaccess` with a `FallbackResource /index.html`
 
 ## Contact form
