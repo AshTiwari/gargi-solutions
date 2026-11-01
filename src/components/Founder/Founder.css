@@ -1,0 +1,79 @@
+.founder-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(40px, 7vw, 110px);
+  align-items: center;
+}
+
+.founder-photo {
+  position: relative;
+  padding: 10px;
+  border-radius: 32px;
+  background: var(--brand-gradient);
+  rotate: -2deg;
+  max-width: 480px;
+}
+
+.founder-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border-radius: 24px;
+}
+
+.founder-badge {
+  position: absolute;
+  right: -18px;
+  bottom: 40px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 26px;
+  rotate: 4deg;
+  box-shadow: 0 16px 30px -14px rgba(17, 16, 21, 0.6);
+}
+
+.founder-text {
+  margin-top: 26px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(20px, 2vw, 25px);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+}
+
+.founder-sign {
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+}
+
+.founder-sign span {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.founder-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+@media (max-width: 860px) {
+  .founder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-photo {
+    max-width: 340px;
+    margin: 0 auto 0 4px;
+  }
+
+  .founder-badge {
+    right: -8px;
+  }
+}
