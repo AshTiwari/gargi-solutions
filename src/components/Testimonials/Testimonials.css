@@ -1,0 +1,149 @@
+.reviews {
+  background: var(--paper-2);
+}
+
+.review-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 0.38fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.review-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-tab {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px var(--line);
+  transition: background 0.3s, box-shadow 0.3s, transform 0.4s var(--ease);
+}
+
+.review-tab:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.review-tab.is-active {
+  background: #fff;
+  box-shadow: 0 16px 40px -24px rgba(17, 16, 21, 0.4), inset 0 0 0 1.5px var(--ink);
+  transform: translateX(6px);
+}
+
+.review-tab img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.review-tab span {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.review-tab small {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.review-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  min-height: 380px;
+  padding: clamp(28px, 4.5vw, 56px);
+  border-radius: var(--radius);
+  background: #fff;
+  overflow: hidden;
+}
+
+.review-mark {
+  position: absolute;
+  top: 8px;
+  right: 32px;
+  font-family: var(--font-serif);
+  font-size: 220px;
+  line-height: 0.8;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.review-card blockquote {
+  position: relative;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(20px, 2.1vw, 27px);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  animation: quote-in 0.7s var(--ease);
+}
+
+.review-card figcaption {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.review-card figcaption span {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+@keyframes quote-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+@media (max-width: 900px) {
+  .review-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .review-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0 calc(var(--gutter) * -1);
+    padding: 4px var(--gutter);
+  }
+
+  .review-tab {
+    flex-shrink: 0;
+  }
+
+  .review-tab.is-active {
+    transform: none;
+  }
+
+  .review-card {
+    min-height: 0;
+    padding-top: 72px;
+  }
+
+  .review-mark {
+    font-size: 150px;
+    top: 10px;
+    right: 22px;
+  }
+}

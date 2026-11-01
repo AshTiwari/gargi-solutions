@@ -1,0 +1,145 @@
+.nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  padding: 14px 0;
+  transition: padding 0.4s var(--ease), background 0.4s, box-shadow 0.4s;
+}
+
+.nav--scrolled {
+  padding: 8px 0;
+  background: rgba(247, 244, 239, 0.78);
+  backdrop-filter: saturate(1.6) blur(16px);
+  -webkit-backdrop-filter: saturate(1.6) blur(16px);
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-logo img {
+  height: 52px;
+  width: auto;
+  transition: height 0.4s var(--ease);
+}
+
+.nav--scrolled .nav-logo img {
+  height: 44px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  position: relative;
+  padding: 10px 14px;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 999px;
+  transition: background 0.2s;
+}
+
+.nav-links a:hover {
+  background: rgba(17, 16, 21, 0.06);
+}
+
+.nav-cta {
+  min-height: 46px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.nav-toggle {
+  display: none;
+  margin-left: auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+  place-items: center;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: grid;
+    position: relative;
+    z-index: 2;
+  }
+
+  .nav-logo {
+    position: relative;
+    z-index: 2;
+  }
+
+  .nav-logo img,
+  .nav--scrolled .nav-logo img {
+    height: 42px;
+  }
+
+  .nav--open {
+    background: var(--paper);
+  }
+
+  .mobile-menu:not([hidden]) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    inset: 0;
+    padding: 110px var(--gutter) 40px;
+    background: var(--paper);
+    animation: menu-in 0.45s var(--ease);
+  }
+
+  .mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu nav a {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(36px, 11vw, 56px);
+    letter-spacing: -0.03em;
+    line-height: 1.25;
+    border-bottom: 1px solid var(--line);
+    padding: 8px 0;
+    animation: link-in 0.5s var(--ease) both;
+    animation-delay: calc(var(--i) * 0.05s + 0.1s);
+  }
+
+  .mobile-menu .btn {
+    width: 100%;
+  }
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes link-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
