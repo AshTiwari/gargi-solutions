@@ -1,7 +1,5 @@
 // All site copy lives here so it can be edited without touching layout code.
 import priyanka from './assets/img/priyanka.webp';
-import ashutosh from './assets/img/ashutosh.webp';
-import prince from './assets/img/prince.webp';
 import vijay from './assets/img/vijay.webp';
 import angela from './assets/img/angela.webp';
 import sagar from './assets/img/sagar.webp';
@@ -139,7 +137,6 @@ export const testimonials = [
   },
   {
     name: 'Sagar Gupta',
-    role: 'Creator',
     place: 'Mumbai',
     image: sagar,
     quote:
@@ -187,37 +184,18 @@ export const founder = {
   title: 'Founder & Chief Content Creator',
   image: priyanka,
   short:
-    'Priyanka started Kratoos to give growing brands the kind of content team usually reserved for big budgets. She leads strategy and writing on every account, and pairs creative instinct with a sharp eye for what moves a business forward.',
+    'Priyanka founded Kratoos and leads its content work, pairing creative instinct with a sharp eye for what moves a business forward.',
   long: [
-    'Priyanka started Kratoos to give growing brands the kind of content team that is usually reserved for big budgets. She leads strategy and writing on every account.',
+    'Priyanka founded Kratoos and leads its content work.',
     'Her work sits where content, technology and business meet: a creative instinct for what people will stop and read, paired with the business sense to make sure it moves the numbers that matter. Her long-form writing on branding, banking and tech is published on LinkedIn.',
     'She believes in building with boldness, and that opportunities are made, not found.',
   ],
 };
 
-export const team = [
-  {
-    name: 'Ashutosh Kumar',
-    title: 'Tech Lead',
-    bio: 'Handles the technical side of Kratoos, building and maintaining our digital solutions.',
-    image: ashutosh,
-  },
-  {
-    name: 'Prince',
-    title: 'Accountant',
-    bio: 'Manages the finances and books at Kratoos, keeping everything accurate and on track.',
-    image: prince,
-  },
-];
-
 export const principles = [
   {
     title: 'Integrity',
     text: 'Integrity is the foundation of every client relationship and project. We are committed to honesty, transparency and ethical practice in every interaction.',
-  },
-  {
-    title: 'Believe in best',
-    text: 'We have unwavering faith in our ability to deliver the best outcome for our clients, and we back it with dedication, expertise and a relentless pursuit of excellence.',
   },
   {
     title: 'Bold is beautiful',
@@ -226,9 +204,5 @@ export const principles = [
   {
     title: 'Don’t look for opportunities, create them',
     text: 'We don’t wait for the right moment; we make it. Strategic thinking and a proactive mindset help clients find untapped potential and carve their own path.',
-  },
-  {
-    title: 'Make innovation part of life',
-    text: 'For us, innovation isn’t occasional, it’s a mindset. We explore new tools and creative ideas constantly so our clients stay ahead of the curve.',
   },
 ];

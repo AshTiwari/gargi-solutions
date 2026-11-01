@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
-import { founder, team } from '../content';
+import { founder } from '../content';
 import Reveal from '../components/Reveal';
 import './pages.css';
 
@@ -13,7 +13,7 @@ export default function Team() {
             Our team
           </span>
           <h1 className="display page-title hero-in" style={{ '--d': 0.08 }}>
-            The people behind <span className="serif gradient-text">the posts.</span>
+            The mind behind <span className="serif gradient-text nowrap">the posts.</span>
           </h1>
         </div>
       </section>
@@ -30,26 +30,6 @@ export default function Team() {
             <p key={p.slice(0, 24)}>{p}</p>
           ))}
         </Reveal>
-      </section>
-
-      <section className="section">
-        <div className="wrap">
-          <Reveal className="section-head">
-            <h2 className="h2">The crew</h2>
-          </Reveal>
-          <div className="team-grid">
-            {team.map((m, i) => (
-              <Reveal as="article" className="team-card" key={m.name} delay={i * 0.08}>
-                <div className="team-photo">
-                  <img src={m.image} alt={m.name} loading="lazy" width="600" height="800" />
-                </div>
-                <h3>{m.name}</h3>
-                <p className="team-role">{m.title}</p>
-                <p>{m.bio}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
       </section>
 
       <CtaBand />

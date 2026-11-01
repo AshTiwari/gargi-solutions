@@ -45,9 +45,7 @@ export default function Testimonials() {
             <blockquote key={active}>{t.quote}</blockquote>
             <figcaption>
               <strong>{t.name}</strong>
-              <span>
-                {t.role} · {t.place}
-              </span>
+              <span>{[t.role, t.place].filter(Boolean).join(' · ')}</span>
             </figcaption>
           </figure>
         </Reveal>

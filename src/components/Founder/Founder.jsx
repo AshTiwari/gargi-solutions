@@ -16,9 +16,9 @@ export default function Founder() {
         </Reveal>
 
         <Reveal className="founder-copy" delay={0.1}>
-          <span className="eyebrow">Who you&apos;ll work with</span>
+          <span className="eyebrow">Our founder</span>
           <h2 className="h2">
-            Hi, I&apos;m <span className="serif gradient-text">Priyanka.</span>
+            Meet <span className="serif gradient-text">Priyanka.</span>
           </h2>
           <p className="founder-text">{founder.short}</p>
           <p className="founder-sign">
@@ -27,7 +27,7 @@ export default function Founder() {
           </p>
           <div className="founder-actions">
             <Link to="/team" className="btn btn-primary">
-              Meet the team <ArrowUpRight size={18} />
+              More about Priyanka <ArrowUpRight size={18} />
             </Link>
             <Link to="/principles" className="btn btn-ghost">
               Our principles

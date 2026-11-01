@@ -12,7 +12,7 @@ export default function Principles() {
             Our principles
           </span>
           <h1 className="display page-title hero-in" style={{ '--d': 0.08 }}>
-            Five ideas we <span className="serif gradient-text nowrap">work by.</span>
+            Three ideas we <span className="serif gradient-text nowrap">work by.</span>
           </h1>
           <p className="lede hero-in" style={{ '--d': 0.16 }}>
             They guide every decision we make, from the ideas we pitch to the way we treat the people we work with.
