@@ -10,11 +10,8 @@ import articleNetflix from './assets/img/article-netflix.webp';
 
 export const contact = {
   email: 'contact@kratoos.com',
-  phones: [
-    { label: '+91 89284 12489', tel: '+918928412489' },
-    { label: '+91 86918 52076', tel: '+918691852076' },
-  ],
-  whatsapp: 'https://wa.me/918928412489?text=Hi%20Kratoos%2C%20I%27d%20like%20to%20talk%20about%20content%20for%20my%20brand.',
+  phones: [{ label: '+91 91675 51531', tel: '+919167551531' }],
+  whatsapp: 'https://wa.me/919167551531?text=Hi%20Kratoos%2C%20I%27d%20like%20to%20talk%20about%20content%20for%20my%20brand.',
   address: 'Office 16, Samrat Estates, J.N. Road, Mulund West, Mumbai 400080',
   mapUrl: 'https://maps.google.com/?q=Samrat+Estates+J.N.+Road+Mulund+West+Mumbai+400080',
 };
